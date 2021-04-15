@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B demo 4</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <h1>Birds & Beers Matching Game</h1>
+
+    <div class='some-page-wrapper'>
+        <!--Row1-->
+        <div class='row'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="bluejay.jpeg" id="bluejay" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Blue Jay</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              2.3-3.8 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              <placeholder>5.2% ABV</placeholder>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="dallasblonde.jpeg" id="dallasblonde" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Dallas Blonde</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--Row2-->
+        <div class='row 2'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="dove.jpeg" id="dove" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Mourning Dove</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              3-6 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              7% ABV
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="revolver.jpeg" id="revolver" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Revolver Blood & Honey</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--Row3-->
+        <div class='row 3'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="pigeon.jpeg" id="pigeon" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Rock Pigeon</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              9.3-13.4 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              4.9% ABV
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="lovestreet.jpeg" id="lovestreet" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Karbach Love Street</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--Row4-->
+        <div class='row 4'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="thrasher.jpeg" id="thrasher" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Brown Thrasher</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              2.1-3.1 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              6.8% ABV
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="thirstygoat.jpeg" id="thirstygoat" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Thirsty Goat Amber</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--Row5-->
+        <div class='row 5'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="hawk.jpeg" id="hawk" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Red-Tailed Hawk</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              25-45 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              <placeholder>7.2% ABV</placeholder>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="saintarnold.jpeg" id="saintarnold" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Saint Arnold Art Car IPA</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--Row6-->
+        <div class='row 6'>
+          <div class='column'>
+            <div class='bird-column'>
+              <img src="woodpecker.jpeg" id="woodpecker" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Pileated Woodpecker</p></div>
+                </div>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              8.8-12.3 oz
+            </div>
+          </div>
+          <div class='column'>
+            <div class='drop-column' ondragover="allowDrop(event)" ondrop="drop(event)">
+              4.4% ABV
+            </div>
+          </div>
+          <div class='column'>
+            <div class='beer-column'>
+              <img src="shiner.jpeg" id="shiner" height="200px" ondragstart="dragStart(event)">
+              <div class="overlay">
+                <div class="text"><p>Shiner Bock</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="app.js"></script>
+
+</body>
+</html>
